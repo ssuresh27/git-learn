@@ -10,3 +10,6 @@ git status
 git add <f1> <f2>
 #git commit message
 git commit -m "Message"
+
+#Git stage all files
+git add .
