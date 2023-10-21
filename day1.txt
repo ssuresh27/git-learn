@@ -26,3 +26,74 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 suresh@Sureshs-MacBook-Pro comments % code .
 suresh@Sureshs-MacBook-Pro comments % 
+
+uresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vscode/
+        day1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+suresh@Sureshs-MacBook-Pro comments % git add day1.txt 
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   day1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vscode/
+
+suresh@Sureshs-MacBook-Pro comments % vi .gitignore
+suresh@Sureshs-MacBook-Pro comments % git status   
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   day1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+suresh@Sureshs-MacBook-Pro comments % git add .gitignore 
+suresh@Sureshs-MacBook-Pro comments % git status        
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   day1.txt
+
+suresh@Sureshs-MacBook-Pro comments %
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   day1.txt
+
+suresh@Sureshs-MacBook-Pro comments % git commit -m "day1 initial comments" 
+[main (root-commit) 9acf53f] day1 initial comments
+ 2 files changed, 29 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 day1.txt
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro comments % 
