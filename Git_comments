@@ -1,24 +1,26 @@
-#Git comments
-#Git Configure
+# Git comments
+# Git Configure
 git config user.name
 git config user.email
-#Git create repo
+# Git create repo
 git init
-#Git status of repo
+# Git status of repo
 git status
-#Git stage file
+# Git stage file
 git add <f1> <f2>
 - git commit message
 git commit -m "Message"
 git commit --amend
 
-#Git stage all files
+# Git stage all files
 git add .
-#Git Config in Appendix
+# Git Config in Appendix
 https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config
 # Install 
 instal code to path in palate 
-##Shell command 'code' successfully installed in PATH.
+## Shell command 'code' successfully installed in PATH.
 #Git logs
 git log
 git log --oneline
+
+# Git ignore
