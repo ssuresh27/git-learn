@@ -1,0 +1,42 @@
+suresh@Sureshs-MacBook-Pro comments % git log
+commit 22938510a7bec077b42927e53ea18966d549faad (HEAD -> main)
+Author: Suresh Sundararajan <yessures@gmail.com>
+Date:   Sat Oct 21 10:39:40 2023 -0600
+
+    Git doc referrece added
+
+commit f87c4ed286d76be6d7c3395e2f116cad4ea29d35
+Author: Suresh Sundararajan <yessures@gmail.com>
+Date:   Sat Oct 21 10:33:18 2023 -0600
+
+    Add Git Doc referrnce
+    Git config for vscode
+
+commit 0ca89ddacf6950a9141cc199a44759bd95610879
+Author: Suresh Sundararajan <yessures@gmail.com>
+Date:   Sat Oct 21 10:07:21 2023 -0600
+
+    Stage all the files at once
+
+commit a924e1c7f40da074155c086850d90a3956ce60ba
+Author: Suresh Sundararajan <yessures@gmail.com>
+Date:   Sat Oct 21 10:04:28 2023 -0600
+
+    Create git_comments and exec git commit
+
+commit 9acf53f21f3c2be4799067baea39e9033c107c47
+Author: Suresh Sundararajan <yessures@gmail.com>
+Date:   Sat Oct 21 09:58:37 2023 -0600
+
+    day1 initial comments
+suresh@Sureshs-MacBook-Pro comments % 
+suresh@Sureshs-MacBook-Pro comments % 
+
+suresh@Sureshs-MacBook-Pro comments % git log --oneline
+011caa3 (HEAD -> main) Create git log
+2293851 Git doc referrece added
+f87c4ed Add Git Doc referrnce Git config for vscode
+0ca89dd Stage all the files at once
+a924e1c Create git_comments and exec git commit
+9acf53f day1 initial comments
+suresh@Sureshs-MacBook-Pro comments % 
