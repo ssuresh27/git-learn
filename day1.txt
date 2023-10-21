@@ -1,0 +1,28 @@
+suresh@Sureshs-MacBook-Pro Git % mkdir comments
+suresh@Sureshs-MacBook-Pro Git % 
+suresh@Sureshs-MacBook-Pro Git % cd comments/m
+cd: no such file or directory: comments/m
+suresh@Sureshs-MacBook-Pro Git % cd comments/ 
+suresh@Sureshs-MacBook-Pro comments % 
+suresh@Sureshs-MacBook-Pro comments % 
+suresh@Sureshs-MacBook-Pro comments % pwd
+/Users/suresh/Git/comments
+suresh@Sureshs-MacBook-Pro comments % git status
+fatal: not a git repository (or any of the parent directories): .git
+##Configure username and email
+suresh@Sureshs-MacBook-Pro comments % git config user.name
+Suresh Sundararajan
+suresh@Sureshs-MacBook-Pro comments % git config user.email
+yessures@gmail.com
+suresh@Sureshs-MacBook-Pro comments % 
+#Initiate Git repository
+suresh@Sureshs-MacBook-Pro comments % git init
+Initialized empty Git repository in /Users/suresh/Git/comments/.git/
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+suresh@Sureshs-MacBook-Pro comments % code .
+suresh@Sureshs-MacBook-Pro comments % 
