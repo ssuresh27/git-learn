@@ -1,1 +1,50 @@
 #Git commits in details
+suresh@Sureshs-MacBook-Pro comments % git config --global core.editor "code --wait"
+suresh@Sureshs-MacBook-Pro comments % git status                                   
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   day1.txt
+	new file:   git_commits_in_details
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+
+suresh@Sureshs-MacBook-Pro comments % git add .                                    
+suresh@Sureshs-MacBook-Pro comments % git config --global core.editor              
+code --wait
+suresh@Sureshs-MacBook-Pro comments % git commmit 
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+suresh@Sureshs-MacBook-Pro comments % git commit  
+[main f87c4ed] Add Git Doc referrnce Git config for vscode
+ 3 files changed, 23 insertions(+), 2 deletions(-)
+ create mode 100644 git_commits_in_details
+suresh@Sureshs-MacBook-Pro comments % git status                      
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro comments % git add .                       
+suresh@Sureshs-MacBook-Pro comments % git commit  
+[main 2293851] Git doc referrece added
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+suresh@Sureshs-MacBook-Pro comments % git status 
+On branch main
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro comments % 
