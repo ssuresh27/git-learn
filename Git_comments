@@ -24,3 +24,7 @@ git log
 git log --oneline
 
 # Git ignore
+.gitignore
+.vscode/*
+*.log
+secrets/
