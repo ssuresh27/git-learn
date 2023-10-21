@@ -48,3 +48,56 @@ suresh@Sureshs-MacBook-Pro comments % git status
 On branch main
 nothing to commit, working tree clean
 suresh@Sureshs-MacBook-Pro comments % 
+
+
+- Git Amend
+suresh@Sureshs-MacBook-Pro comments % git commit -am "Add more git log "
+[main 5269e2c] Add more git log
+ 2 files changed, 46 insertions(+), 1 deletion(-)
+suresh@Sureshs-MacBook-Pro comments % git add .
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   git_commits_in_details
+
+suresh@Sureshs-MacBook-Pro comments % git commit -m "test commit"
+[main 192c246] test commit
+ 1 file changed, 3 insertions(+)
+suresh@Sureshs-MacBook-Pro comments % git status                 
+On branch main
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro comments % 
+
+
+suresh@Sureshs-MacBook-Pro comments % git log --oneline
+- 509da39 (HEAD -> main) Updated commit message
+5269e2c Add more git log
+011caa3 Create git log
+2293851 Git doc referrece added
+f87c4ed Add Git Doc referrnce Git config for vscode
+0ca89dd Stage all the files at once
+a924e1c Create git_comments and exec git commit
+9acf53f day1 initial comments
+suresh@Sureshs-MacBook-Pro comments % git add .         
+suresh@Sureshs-MacBook-Pro comments % git commit --amend
+[main 27f010e] Updated commit message to include comment file
+ Date: Sat Oct 21 11:41:32 2023 -0600
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+suresh@Sureshs-MacBook-Pro comments % 
+
+suresh@Sureshs-MacBook-Pro comments % git add .         
+suresh@Sureshs-MacBook-Pro comments % git commit --amend
+[main 49141ee] Updated commit message to include comment file and log
+ Date: Sat Oct 21 11:41:32 2023 -0600
+ 2 files changed, 39 insertions(+), 1 deletion(-)ß
+suresh@Sureshs-MacBook-Pro comments % git log --oneline 
+- 49141ee (HEAD -> main) Updated commit message to include comment file and log
+5269e2c Add more git log
+011caa3 Create git log
+2293851 Git doc referrece added
+f87c4ed Add Git Doc referrnce Git config for vscode
+0ca89dd Stage all the files at once
+a924e1c Create git_comments and exec git commit
+9acf53f day1 initial comments
+suresh@Sureshs-MacBook-Pro comments % 
