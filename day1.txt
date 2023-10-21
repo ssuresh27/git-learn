@@ -118,3 +118,21 @@ suresh@Sureshs-MacBook-Pro comments % git status
 On branch main
 nothing to commit, working tree clean
 suresh@Sureshs-MacBook-Pro comments % 
+
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+	modified:   day1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro comments % git add .
+suresh@Sureshs-MacBook-Pro comments % git commit -m "Stage all the files at once"
+[main 0ca89dd] Stage all the files at once
+ 2 files changed, 25 insertions(+), 1 deletion(-)
+suresh@Sureshs-MacBook-Pro comments % git status                                 
+On branch main
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro comments %    
