@@ -1,3 +1,4 @@
+# Trello for Board
 # Git comments
 # Git Configure
 git config user.name
@@ -29,3 +30,5 @@ git log --oneline
 .vscode/*
 *.log
 secrets/
+
+# Git Branches
