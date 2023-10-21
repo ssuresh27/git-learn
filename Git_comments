@@ -24,6 +24,7 @@ git log
 git log --oneline
 
 # Git ignore
+# https://www.toptal.com/developers/gitignore
 .gitignore
 .vscode/*
 *.log
