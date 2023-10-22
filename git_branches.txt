@@ -23,3 +23,17 @@ nothing to commit, working tree clean
 ➜  comments git:(commitbranch) git checkout branches    
 Switched to branch 'branches'
 ➜  comments git:(branches) 
+
+➜  comments git:(branches) git switch -c deleteMe
+Switched to a new branch 'deleteMe'
+➜  comments git:(deleteMe) git status
+On branch deleteMe
+nothing to commit, working tree clean
+➜  comments git:(deleteMe) git switch branches
+Switched to branch 'branches'
+➜  comments git:(branches) git branch -d deleteMe
+Deleted branch deleteMe (was c4ec080).
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) 

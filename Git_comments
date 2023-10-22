@@ -44,3 +44,8 @@ git switch <branch_name>
 # Another way to switch branch
 
 git checkout <branch_name>
+
+# Delete branch
+git branch -d <branch_name>
+# with force
+git branch -D <branch_name>
