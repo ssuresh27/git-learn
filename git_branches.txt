@@ -37,3 +37,12 @@ Deleted branch deleteMe (was c4ec080).
 On branch branches
 nothing to commit, working tree clean
 ➜  comments git:(branches) 
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) 
+➜  comments git:(branches) git branch -m firstbranch
+➜  comments git:(firstbranch) git status               
+On branch firstbranch
+nothing to commit, working tree clean
+➜  comments git:(firstbranch) 

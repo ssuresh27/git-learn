@@ -49,3 +49,6 @@ git checkout <branch_name>
 git branch -d <branch_name>
 # with force
 git branch -D <branch_name>
+# Rename branch using m (Move/rename)
+git switch <branch_name>
+git branch -m <new_branch_name>
