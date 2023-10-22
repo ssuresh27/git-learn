@@ -1,0 +1,11 @@
+➜  comments git:(main) git branch branches
+➜  comments git:(main) git branch
+➜  comments git:(main) git switch branches
+Switched to branch 'branches'
+➜  comments git:(branches) git branch         
+➜  comments git:(branches) git log --online
+fatal: unrecognized argument: --online
+➜  comments git:(branches) git log --oneline
+➜  comments git:(branches) git log --oneline
+➜  comments git:(branches) 
+➜  comments git:(branches) 
