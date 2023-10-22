@@ -9,3 +9,23 @@ fatal: unrecognized argument: --online
 ➜  comments git:(branches) git log --oneline
 ➜  comments git:(branches) 
 ➜  comments git:(branches) 
+➜  comments git:(main) git switch branches
+Switched to branch 'branches'
+➜  comments git:(branches) 
+➜  comments git:(branches) git branch commitbranch
+➜  comments git:(branches) git switch commitbranch
+Switched to branch 'commitbranch'
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) 
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) git commit -a -m "create commitbranch"
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) 
