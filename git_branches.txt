@@ -9,3 +9,17 @@ fatal: unrecognized argument: --online
 ➜  comments git:(branches) git log --oneline
 ➜  comments git:(branches) 
 ➜  comments git:(branches) 
+
+➜  comments git:(main) git checkout branches
+Switched to branch 'branches'
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) git checkout commitbranch
+Switched to branch 'commitbranch'
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) git checkout branches    
+Switched to branch 'branches'
+➜  comments git:(branches) 
