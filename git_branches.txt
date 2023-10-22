@@ -23,3 +23,26 @@ nothing to commit, working tree clean
 ➜  comments git:(commitbranch) git checkout branches    
 Switched to branch 'branches'
 ➜  comments git:(branches) 
+
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) git switch -c newbranch 
+Switched to a new branch 'newbranch'
+➜  comments git:(newbranch) git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+	status
+	stage
+	stash
+➜  comments git:(newbranch) git status
+On branch newbranch
+nothing to commit, working tree clean
+➜  comments git:(newbranch) 
+
+➜  comments git:(newbranch) ✗ git commit -am "Create and switch branch using -c new branch_name"
+[newbranch 758c6de] Create and switch branch using -c new branch_name
+ 2 files changed, 23 insertions(+), 2 deletions(-)
+# ➜  comments git:(newbranch) git switch -c newbranch                                           
+fatal: a branch named 'newbranch' already exists

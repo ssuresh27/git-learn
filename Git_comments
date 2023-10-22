@@ -44,3 +44,7 @@ git switch <branch_name>
 # Another way to switch branch
 
 git checkout <branch_name>
+
+# Create a branch and switch to branch in one comment
+
+git switch -c <branch_name>
