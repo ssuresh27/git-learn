@@ -48,6 +48,10 @@ git switch <branch_name>
 
 git checkout <branch_name>
 
+# Create a branch and switch to branch in one comment
+
+git switch -c <branch_name>
+
 # Delete branch
 git branch -d <branch_name>
 # with force
