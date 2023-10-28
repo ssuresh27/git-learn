@@ -1,3 +1,4 @@
 .vscode/*
 *.log
 secrets/
+.DS_Store

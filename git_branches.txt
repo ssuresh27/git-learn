@@ -46,3 +46,10 @@ nothing to commit, working tree clean
 On branch firstbranch
 nothing to commit, working tree clean
 ➜  comments git:(firstbranch) 
+
+suresh@Sureshs-MacBook-Pro comments % git branch -v
+  commitbranch 87fae43 Add am in commit for add + message
+* firstbranch  3599059 Rename branch using -m (Move/rename)
+  main         dcb014e Add DS_Store to .gitignore
+  secondbranch 5d05dcf Create and switch branch using -c new branch_name
+suresh@Sureshs-MacBook-Pro comments % 

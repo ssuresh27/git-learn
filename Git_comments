@@ -37,6 +37,9 @@ secrets/
 # list branch
 git branch
 
+#List with more details
+git branch -v
+
 # Create a branch
 git branch <branch_name>
 git switch <branch_name>
