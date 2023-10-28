@@ -1,0 +1,40 @@
+suresh@Sureshs-MacBook-Pro comments % git switch firstbranch 
+Switched to branch 'firstbranch'
+suresh@Sureshs-MacBook-Pro comments % 
+suresh@Sureshs-MacBook-Pro comments % git merge secondbranch
+Auto-merging Git_comments
+CONFLICT (content): Merge conflict in Git_comments
+Auto-merging git_branches.txt
+CONFLICT (content): Merge conflict in git_branches.txt
+Automatic merge failed; fix conflicts and then commit the result.
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch firstbranch
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   Git_comments
+        both modified:   git_branches.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch firstbranch
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro comments % git brache -v
+git: 'brache' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+suresh@Sureshs-MacBook-Pro comments % git brach -v 
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+suresh@Sureshs-MacBook-Pro comments % git branch -v
+  commitbranch 87fae43 Add am in commit for add + message
+* firstbranch  a28ef1c Merge branch 'secondbranch' into firstbranch
+  main         dcb014e Add DS_Store to .gitignore
+  secondbranch 5d05dcf Create and switch branch using -c new branch_name
+suresh@Sureshs-MacBook-Pro comments % 

@@ -59,3 +59,9 @@ git branch -D <branch_name>
 # Rename branch using m (Move/rename)
 git switch <branch_name>
 git branch -m <new_branch_name>
+
+# Merge branch
+# 1. Switch to branch that's the merge branch
+switch branch firstbranch
+# 2. merge with branch
+merge branch sencondbranch

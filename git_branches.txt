@@ -69,7 +69,7 @@ nothing to commit, working tree clean
 On branch firstbranch
 nothing to commit, working tree clean
 ➜  comments git:(firstbranch) 
-
+-- CONFLICT
 suresh@Sureshs-MacBook-Pro comments % git branch -v
   commitbranch 87fae43 Add am in commit for add + message
 * firstbranch  3599059 Rename branch using -m (Move/rename)
