@@ -101,3 +101,32 @@ f87c4ed Add Git Doc referrnce Git config for vscode
 a924e1c Create git_comments and exec git commit
 9acf53f day1 initial comments
 suresh@Sureshs-MacBook-Pro comments % 
+
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) git commit -a -m "create commitbranch"
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) 
+
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+	modified:   git_branches.txt
+	modified:   git_commits_in_details
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  comments git:(commitbranch) ✗ git commit -am "Add am in commit for add + message"
+[commitbranch 2ca3b26] Add am in commit for add + message
+ 3 files changed, 36 insertions(+), 1 deletion(-)
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) 

@@ -15,6 +15,10 @@ git add <f1> <f2>
 git commit -m "Message"
 git commit --amend
 
+- git commit with stage 
+
+git commit -a -m <message>
+
 # Git stage all files
 git add .
 # Git Config in Appendix
