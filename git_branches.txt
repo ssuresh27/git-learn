@@ -1,0 +1,78 @@
+➜  comments git:(main) git branch branches
+➜  comments git:(main) git branch
+➜  comments git:(main) git switch branches
+Switched to branch 'branches'
+➜  comments git:(branches) git branch         
+➜  comments git:(branches) git log --online
+fatal: unrecognized argument: --online
+➜  comments git:(branches) git log --oneline
+➜  comments git:(branches) git log --oneline
+➜  comments git:(branches) 
+➜  comments git:(branches) 
+
+➜  comments git:(main) git checkout branches
+Switched to branch 'branches'
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) git checkout commitbranch
+Switched to branch 'commitbranch'
+➜  comments git:(commitbranch) git status
+On branch commitbranch
+nothing to commit, working tree clean
+➜  comments git:(commitbranch) git checkout branches    
+Switched to branch 'branches'
+➜  comments git:(branches) 
+
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) git switch -c newbranch 
+Switched to a new branch 'newbranch'
+➜  comments git:(newbranch) git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+	status
+	stage
+	stash
+➜  comments git:(newbranch) git status
+On branch newbranch
+nothing to commit, working tree clean
+➜  comments git:(newbranch) 
+
+➜  comments git:(newbranch) ✗ git commit -am "Create and switch branch using -c new branch_name"
+[newbranch 758c6de] Create and switch branch using -c new branch_name
+ 2 files changed, 23 insertions(+), 2 deletions(-)
+# ➜  comments git:(newbranch) git switch -c newbranch                                           
+fatal: a branch named 'newbranch' already exists
+
+➜  comments git:(branches) git switch -c deleteMe
+Switched to a new branch 'deleteMe'
+➜  comments git:(deleteMe) git status
+On branch deleteMe
+nothing to commit, working tree clean
+➜  comments git:(deleteMe) git switch branches
+Switched to branch 'branches'
+➜  comments git:(branches) git branch -d deleteMe
+Deleted branch deleteMe (was c4ec080).
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) 
+➜  comments git:(branches) git status
+On branch branches
+nothing to commit, working tree clean
+➜  comments git:(branches) 
+➜  comments git:(branches) git branch -m firstbranch
+➜  comments git:(firstbranch) git status               
+On branch firstbranch
+nothing to commit, working tree clean
+➜  comments git:(firstbranch) 
+-- CONFLICT
+suresh@Sureshs-MacBook-Pro comments % git branch -v
+  commitbranch 87fae43 Add am in commit for add + message
+* firstbranch  3599059 Rename branch using -m (Move/rename)
+  main         dcb014e Add DS_Store to .gitignore
+  secondbranch 5d05dcf Create and switch branch using -c new branch_name
+suresh@Sureshs-MacBook-Pro comments % 

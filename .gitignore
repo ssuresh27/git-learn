@@ -2,3 +2,7 @@
 .vscode/*
 *.log
 secrets/
+<<<<<<< HEAD
+=======
+.DS_Store
+>>>>>>> bmerge

@@ -38,3 +38,34 @@ git log --oneline
 secrets/
 
 # Git Branches
+# list branch
+git branch
+
+#List with more details
+git branch -v
+
+# Create a branch
+git branch <branch_name>
+git switch <branch_name>
+
+# Another way to switch branch
+
+git checkout <branch_name>
+
+# Create a branch and switch to branch in one comment
+
+git switch -c <branch_name>
+
+# Delete branch
+git branch -d <branch_name>
+# with force
+git branch -D <branch_name>
+# Rename branch using m (Move/rename)
+git switch <branch_name>
+git branch -m <new_branch_name>
+
+# Merge branch
+# 1. Switch to branch that's the merge branch
+switch branch firstbranch
+# 2. merge with branch
+merge branch sencondbranch
