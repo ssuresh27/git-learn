@@ -70,5 +70,11 @@ switch branch firstbranch
 # 2. merge with branch
 merge branch sencondbranch
 
+
+
+#removed above line and added new line of same comment to find the diff status
+
 #Git Diff to identify the difference
 git diff
+# where '-' shows not present in file
+# '+' represents new connet availe in the file

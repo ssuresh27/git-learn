@@ -53,3 +53,23 @@ suresh@Sureshs-MacBook-Pro comments % git commit -m "Create gitdiff file"
  2 files changed, 18 insertions(+)
  create mode 100644 gitdiff.txt
 suresh@Sureshs-MacBook-Pro comments % 
+
+suresh@Sureshs-MacBook-Pro comments % git diff  
+diff --git a/Git_comments b/Git_comments
+index 5ba3f9f..fda547b 100644
+--- a/Git_comments
++++ b/Git_comments
+@@ -70,5 +70,8 @@ switch branch firstbranch
+ # 2. merge with branch
+ merge branch sencondbranch
+ 
+-#Git Diff to identify the difference
+-git diff
+\ No newline at end of file
++
++
++#removed above line and added new line of same comment to find the diff status
++
++#Git Diff to identify the difference
+\ No newline at end of file
+suresh@Sureshs-MacBook-Pro comments % 
