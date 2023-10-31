@@ -69,3 +69,6 @@ git branch -m <new_branch_name>
 switch branch firstbranch
 # 2. merge with branch
 merge branch sencondbranch
+
+#Git Diff to identify the difference
+git diff
