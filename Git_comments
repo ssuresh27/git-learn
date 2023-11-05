@@ -84,3 +84,7 @@ git diff HEAD
 # Git diff --staged or --cached to list only diff on staged changes
 
 git diff --staged or git diff --cached
+
+# Git diff for a specific file
+
+git diff filename

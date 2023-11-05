@@ -208,3 +208,50 @@ index 2d4f4de..47aeb09 100644
 +diff --git a/Git_comments b/Git_comments
 +index 4efed62..07f5426 100644
 suresh@Sureshs-MacBook-Pro comments % 
+
+
+suresh@Sureshs-MacBook-Pro comments % git status
+On branch gitdiff
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro comments % git diff
+diff --git a/Git_comments b/Git_comments
+index 02dce43..e84018e 100644
+--- a/Git_comments
++++ b/Git_comments
+@@ -83,4 +83,8 @@ git diff HEAD
+ 
+ # Git diff --staged or --cached to list only diff on staged changes
+ 
+-git diff --staged or git diff --cached
+\ No newline at end of file
++git diff --staged or git diff --cached
++
++# Git diff for a specific file
++
++git diff filename
+\ No newline at end of file
+suresh@Sureshs-MacBook-Pro comments % 
+
+suresh@Sureshs-MacBook-Pro comments % git diff Git_comments 
+diff --git a/Git_comments b/Git_comments
+index 02dce43..e84018e 100644
+--- a/Git_comments
++++ b/Git_comments
+@@ -83,4 +83,8 @@ git diff HEAD
+ 
+ # Git diff --staged or --cached to list only diff on staged changes
+ 
+-git diff --staged or git diff --cached
+\ No newline at end of file
++git diff --staged or git diff --cached
++
++# Git diff for a specific file
++
++git diff filename
+\ No newline at end of file
+suresh@Sureshs-MacBook-Pro comments % 
