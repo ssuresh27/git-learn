@@ -74,7 +74,13 @@ merge branch sencondbranch
 
 #removed above line and added new line of same comment to find the diff status
 
-#Git Diff to identify the difference
+#Git Diff to identify the difference NOT STAGED for next commit
 git diff
 # where '-' shows not present in file
 # '+' represents new connet availe in the file
+# Git Diff HEAD identifiy difference between STAGED & NOT STAGED from HEAD (Last commit)
+git diff HEAD
+
+# Git diff --staged or --cached to list only diff on staged changes
+
+git diff --staged or git diff --cached
