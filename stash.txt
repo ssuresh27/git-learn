@@ -52,3 +52,28 @@ suresh@Sureshs-MacBook-Pro git-learn % git switch stash
 warning: refname 'stash' is ambiguous.
 Switched to branch 'stash'
 suresh@Sureshs-MacBook-Pro git-learn % 
+
+suresh@Sureshs-MacBook-Pro git-learn % git stash list
+stash@{0}: WIP on stash: a54e45f Git status with apply
+stash@{1}: WIP on stash: a54e45f Git status with apply
+stash@{2}: WIP on stashnew: 9d12e3e git stash intro
+suresh@Sureshs-MacBook-Pro git-learn % git stash apply stash@{0}
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+suresh@Sureshs-MacBook-Pro git-learn %
+
+suresh@Sureshs-MacBook-Pro git-learn % git stash drop stash@{0}
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+warning: refname 'stash' is ambiguous.
+error: 'stash@{0}' is not a stash reference
+suresh@Sureshs-MacBook-Pro git-learn % git stash clear         
+suresh@Sureshs-MacBook-Pro git-learn % git stash list          
+suresh@Sureshs-MacBook-Pro git-learn % 
