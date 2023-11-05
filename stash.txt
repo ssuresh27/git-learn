@@ -1,1 +1,20 @@
 # Git stash
+suresh@Sureshs-MacBook-Pro git-learn % git status                      
+On branch stashnew
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro git-learn % git switch stash 
+error: Your local changes to the following files would be overwritten by checkout:
+	Git_comments
+Please commit your changes or stash them before you switch branches.
+Aborting
+suresh@Sureshs-MacBook-Pro git-learn % git stash 
+Saved working directory and index state WIP on stashnew: 9d12e3e git stash intro
+suresh@Sureshs-MacBook-Pro git-learn % git switch stash
+warning: refname 'stash' is ambiguous.
+Switched to branch 'stash'
+suresh@Sureshs-MacBook-Pro git-learn % 
