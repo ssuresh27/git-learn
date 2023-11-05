@@ -255,3 +255,37 @@ index 02dce43..e84018e 100644
 +git diff filename
 \ No newline at end of file
 suresh@Sureshs-MacBook-Pro comments % 
+
+
+suresh@Sureshs-MacBook-Pro git-learn % git status
+On branch gitdiff_new
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro git-learn % git diff gitdiff gitdiff_new
+suresh@Sureshs-MacBook-Pro git-learn % git add .
+suresh@Sureshs-MacBook-Pro git-learn % git commit -m "create a new diff branch"
+[gitdiff_new 31fda16] create a new diff branch
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+suresh@Sureshs-MacBook-Pro git-learn % git diff gitdiff gitdiff_new            
+diff --git a/Git_comments b/Git_comments
+index e84018e..e7cca72 100644
+--- a/Git_comments
++++ b/Git_comments
+@@ -87,4 +87,8 @@ git diff --staged or git diff --cached
+ 
+ # Git diff for a specific file
+ 
+-git diff filename
+\ No newline at end of file
++git diff filename
++
++#Git diff between branches
++
++git diff branch1 branch2
+\ No newline at end of file
+suresh@Sureshs-MacBook-Pro git-learn % 
+
