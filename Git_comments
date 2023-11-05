@@ -99,5 +99,9 @@ git diff commit_hash1 commit_hash2
 
 #Git Stash
 git stash 
-# Undo stash Testing the stash
+# Undo stash Testing the stash and pops out of stash
 git stash pop
+
+#Git stash apply to apply the stash changes to other branches without deleting files fom stash
+
+git stash apply 
