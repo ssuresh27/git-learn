@@ -76,3 +76,12 @@ suresh@Sureshs-MacBook-Pro comments % git branch -v
   main         dcb014e Add DS_Store to .gitignore
   secondbranch 5d05dcf Create and switch branch using -c new branch_name
 suresh@Sureshs-MacBook-Pro comments % 
+
+
+suresh@Sureshs-MacBook-Pro git-learn % git merge  gitdiff_new
+Updating 5899a1e..3053348
+Fast-forward
+ Git_comments |  6 +++++-
+ gitdiff.txt  | 34 ++++++++++++++++++++++++++++++++++
+ 2 files changed, 39 insertions(+), 1 deletion(-)
+suresh@Sureshs-MacBook-Pro git-learn % 
