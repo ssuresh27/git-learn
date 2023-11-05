@@ -40,3 +40,39 @@ f87c4ed Add Git Doc referrnce Git config for vscode
 a924e1c Create git_comments and exec git commit
 9acf53f day1 initial comments
 suresh@Sureshs-MacBook-Pro comments % 
+
+
+suresh@Sureshs-MacBook-Pro git-learn % git checkout 3afadfc
+Note: switching to '3afadfc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 3afadfc Create title for branches
+suresh@Sureshs-MacBook-Pro git-learn % git switch -c deattch      
+Switched to a new branch 'deattch'
+suresh@Sureshs-MacBook-Pro git-learn % git status
+On branch deattch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+suresh@Sureshs-MacBook-Pro git-learn % git branch -v 
+* deattch 3afadfc Create title for branches
+  main    d5ad4ba git stash drop and clear
+suresh@Sureshs-MacBook-Pro git-learn % git switch main
+Switched to branch 'main'
+suresh@Sureshs-MacBook-Pro git-learn % 

@@ -113,3 +113,12 @@ git stash drop stash@{index}
 # Drop all the stash
 
 git stash clear
+# Check into specific commit or create a branch from old commit
+git checkout <commit_hash>
+
+#Create a branch from deattached HEAD
+git switch -c <new branch name>
+
+#Git checkout using HEAD~ instead of commit hash
+
+git checkout HEAD~1
