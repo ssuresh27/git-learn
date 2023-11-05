@@ -88,3 +88,7 @@ git diff --staged or git diff --cached
 # Git diff for a specific file
 
 git diff filename
+
+#Git diff between branches
+
+git diff branch1 branch2
