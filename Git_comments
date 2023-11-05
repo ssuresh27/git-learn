@@ -122,3 +122,10 @@ git switch -c <new branch name>
 #Git checkout using HEAD~ instead of commit hash
 
 git checkout HEAD~1
+
+#Undo changes to last commit from saved file
+
+git checkout HEAD <filename(s)>
+
+#Same using -- instead of HEAD
+git checkout -- <filename(s)>

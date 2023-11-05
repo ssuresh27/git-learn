@@ -76,3 +76,30 @@ suresh@Sureshs-MacBook-Pro git-learn % git branch -v
 suresh@Sureshs-MacBook-Pro git-learn % git switch main
 Switched to branch 'main'
 suresh@Sureshs-MacBook-Pro git-learn % 
+
+suresh@Sureshs-MacBook-Pro git-learn % git status                                                    
+On branch main
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro git-learn % tail -3 Git_comments 
+git checkout HEAD <filename(s)>
+
+git checkout %                                                                                                                                      suresh@Sureshs-MacBook-Pro git-learn % tail -3 Git_comments
+git checkout 
+
+This is test line to discard%                                                                                                                       suresh@Sureshs-MacBook-Pro git-learn % git status          
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Git_comments
+
+no changes added to commit (use "git add" and/or "git commit -a")
+suresh@Sureshs-MacBook-Pro git-learn % git checkout HEAD Git_comments 
+Updated 1 path from 32d22b0
+suresh@Sureshs-MacBook-Pro git-learn % git status                    
+On branch main
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro git-learn % tail -3 Git_comments          
+git checkout HEAD <filename(s)>
+
+git checkout %                                                                                                                                      suresh@Sureshs-MacBook-Pro git-learn % 
