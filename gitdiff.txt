@@ -289,3 +289,28 @@ index e84018e..e7cca72 100644
 \ No newline at end of file
 suresh@Sureshs-MacBook-Pro git-learn % 
 
+suresh@Sureshs-MacBook-Pro git-learn % git diff 48349ba..3f09dfb
+diff --git a/Git_comments b/Git_comments
+index fd52428..e7cca72 100644
+--- a/Git_comments
++++ b/Git_comments
+@@ -72,7 +72,6 @@ merge branch sencondbranch
+ 
+ 
+ 
+-
+ #removed above line and added new line of same comment to find the diff status
+ 
+ #Git Diff to identify the difference NOT STAGED for next commit
+@@ -92,7 +91,4 @@ git diff filename
+ 
+ #Git diff between branches
+ 
+-git diff branch1 branch2
+-
+-# git diff between commit using commit hash
+-git diff commit_hash1 commit_hash2
+\ No newline at end of file
++git diff branch1 branch2
+\ No newline at end of file
+suresh@Sureshs-MacBook-Pro git-learn % 
