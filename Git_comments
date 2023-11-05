@@ -96,3 +96,5 @@ git diff branch1 branch2
 
 # git diff between commit using commit hash
 git diff commit_hash1 commit_hash2
+
+#Git Stash
