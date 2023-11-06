@@ -123,3 +123,42 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+
+
+# Git Fetch and pull
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git fetch origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.12 KiB | 191.00 KiB/s, done.
+From github.com:ssuresh27/git-learn
+ * branch            main       -> FETCH_HEAD
+   557d62a..033242f  main       -> origin/main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git pull origin main
+From github.com:ssuresh27/git-learn
+ * branch            main       -> FETCH_HEAD
+Updating 557d62a..033242f
+Fast-forward
+ gitremote.out | 40 +++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 39 insertions(+), 1 deletion(-)
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+
