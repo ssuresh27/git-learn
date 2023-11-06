@@ -85,3 +85,41 @@ ssuresh@z1xd7steprdn041:~/Git/git-learn$ git switch deleteme
 Switched to branch 'deleteme'
 Your branch is up to date with 'origin/deleteme'.
 ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+
+
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitremote_comments
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git add .
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git commit -m "git fetch bring the remote branch updates to local stage area but not avaiable in workarea"
+[main 557d62a] git fetch bring the remote branch updates to local stage area but not avaiable in workarea
+ 1 file changed, 7 insertions(+)
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 480 bytes | 480.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:ssuresh27/git-learn.git
+   b7c4eb7..557d62a  main -> main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
