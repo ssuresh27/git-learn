@@ -1,2 +1,8 @@
 # Clone remote repo
 git clone <remote URL>
+git remote
+git remote -v
+
+# Add a remote repo
+
+git remote add <name> <URL>
