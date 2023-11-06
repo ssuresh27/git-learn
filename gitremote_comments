@@ -21,3 +21,7 @@ git push origin <branch_name>
 # Rename to different branch
 
 git push origin <local_branch_name>:<remote_branch_name>
+
+# Config to push non-default (main) using -u or --set-upstream
+
+git push -u origin dogs (use current branch as default local branch)
