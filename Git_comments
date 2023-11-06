@@ -131,8 +131,25 @@ git checkout HEAD <filename(s)>
 git checkout -- <filename(s)>
 
 # Undo changes using restore instead of using checkout HEAD <fname>
-git restore <filename>
+# Unstage files
+git restore <filename> 
 
 # Rollback to old commit hash or  HEAD~ using restore
-
+# Unstaged files
 git restore --source HEAD~1 <filename>
+
+# Rollback the staged files using restore
+
+git restore --staged 
+
+# Reset or undo commits but keep the changes in file
+
+git reset commit_hash and create a branch
+
+# Undo the commit and delete the changes in files
+
+git reset --hard commit_hash
+
+# Keeps the commit  hash but undo the file changes or commits
+
+got revert commit_hash
