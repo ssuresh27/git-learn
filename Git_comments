@@ -129,3 +129,10 @@ git checkout HEAD <filename(s)>
 
 #Same using -- instead of HEAD
 git checkout -- <filename(s)>
+
+# Undo changes using restore instead of using checkout HEAD <fname>
+git restore <filename>
+
+# Rollback to old commit hash or  HEAD~ using restore
+
+git restore --source HEAD~1 <filename>
