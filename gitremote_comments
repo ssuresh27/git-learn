@@ -17,3 +17,7 @@ git  push origin main
 # Push non-main branch to remote branch
 
 git push origin <branch_name>
+
+# Rename to different branch
+
+git push origin <local_branch_name>:<remote_branch_name>
