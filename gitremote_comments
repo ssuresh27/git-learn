@@ -11,22 +11,6 @@ git remote rename <old> <new>
 
 git remote remove <name>
 
-# Push main branch to remote main branch
-git  push origin main
+# Only default remote branch is tracked when clone the repo, to work on non-default remote branch 
 
-# Push non-main branch to remote branch
-
-git push origin <branch_name>
-
-# Rename to different branch
-
-git push origin <local_branch_name>:<remote_branch_name>
-
-# Config to push non-default (main) using -u or --set-upstream
-
-git push -u origin dogs (use current branch as default local branch)
-
-# List remote branch HEAD information
-git remote -v
-git branch -v
-git branch -r
+git switch <remote_branchname> or git checkout <remote_branchname>

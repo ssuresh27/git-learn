@@ -64,3 +64,24 @@ Your branch is ahead of 'origin/main' by 1 commit.
 
 nothing to commit, working tree clean
 ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git checkout deleteme
+Branch 'deleteme' set up to track remote branch 'deleteme' from 'origin'.
+Switched to a new branch 'deleteme'
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -r
+  origin/HEAD -> origin/main
+  origin/deleteme
+  origin/main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch 
+* deleteme
+  main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -v
+* deleteme 0cf432e git remote comments to add, rename and remove
+  main     978ac62 local commit on remote branch
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git switch deleteme
+Switched to branch 'deleteme'
+Your branch is up to date with 'origin/deleteme'.
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
