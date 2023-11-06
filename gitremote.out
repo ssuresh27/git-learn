@@ -6,6 +6,7 @@ origin	git@github.com:ssuresh27/git-learn.git (fetch)
 origin	git@github.com:ssuresh27/git-learn.git (push)
 suresh@Sureshs-MacBook-Pro git-learn % 
 
+# push remote main branch
 
 suresh@Sureshs-MacBook-Pro git-learn % git push origin main
 Enumerating objects: 189, done.
@@ -26,3 +27,15 @@ suresh@Sureshs-MacBook-Pro git-learn % git remote -v
 origin	git@github.com:ssuresh27/git-learn.git (fetch)
 origin	git@github.com:ssuresh27/git-learn.git (push)
 suresh@Sureshs-MacBook-Pro git-learn % 
+
+-- push new branch to remote
+
+suresh@Sureshs-MacBook-Pro git-learn % git push origin deleteme
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'deleteme' on GitHub by visiting:
+remote:      https://github.com/ssuresh27/git-learn/pull/new/deleteme
+remote: 
+To github.com:ssuresh27/git-learn.git
+ * [new branch]      deleteme -> deleteme
+suresh@Sureshs-MacBook-Pro git-learn %

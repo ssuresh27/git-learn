@@ -10,3 +10,10 @@ git remote add <name> <URL>
 git remote rename <old> <new>
 
 git remote remove <name>
+
+# Push main branch to remote main branch
+git  push origin main
+
+# Push non-main branch to remote branch
+
+git push origin <branch_name>
