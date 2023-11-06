@@ -25,3 +25,8 @@ git push origin <local_branch_name>:<remote_branch_name>
 # Config to push non-default (main) using -u or --set-upstream
 
 git push -u origin dogs (use current branch as default local branch)
+
+# List remote branch HEAD information
+git remote -v
+git branch -v
+git branch -r

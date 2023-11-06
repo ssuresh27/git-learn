@@ -39,3 +39,16 @@ remote:
 To github.com:ssuresh27/git-learn.git
  * [new branch]      deleteme -> deleteme
 suresh@Sureshs-MacBook-Pro git-learn %
+
+-- Git remote branch info
+
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git remote -v
+origin  git@github.com:ssuresh27/git-learn.git (fetch)
+origin  git@github.com:ssuresh27/git-learn.git (push)
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -v
+* main 4a54def using set-upstream to push setup custom branch
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -r
+  origin/HEAD -> origin/main
+  origin/deleteme
+  origin/main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
