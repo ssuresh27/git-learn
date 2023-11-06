@@ -1,0 +1,7 @@
+suresh@Sureshs-MacBook-Pro git-learn % git remote add origin git@github.com:ssuresh27/git-learn.git
+suresh@Sureshs-MacBook-Pro git-learn % git remote
+origin
+suresh@Sureshs-MacBook-Pro git-learn % git remote -v
+origin	git@github.com:ssuresh27/git-learn.git (fetch)
+origin	git@github.com:ssuresh27/git-learn.git (push)
+suresh@Sureshs-MacBook-Pro git-learn % 

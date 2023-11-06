@@ -6,3 +6,7 @@ git remote -v
 # Add a remote repo
 
 git remote add <name> <URL>
+
+git remote rename <old> <new>
+
+git remote remove <name>
