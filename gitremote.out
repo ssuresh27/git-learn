@@ -52,3 +52,15 @@ ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -r
   origin/deleteme
   origin/main
 ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+
+
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git commit -am "branch -r to list remote branch info"
+[main 4114b06] branch -r to list remote branch info
+ 2 files changed, 20 insertions(+), 2 deletions(-)
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
