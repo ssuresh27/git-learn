@@ -14,3 +14,10 @@ git remote remove <name>
 # Only default remote branch is tracked when clone the repo, to work on non-default remote branch 
 
 git switch <remote_branchname> or git checkout <remote_branchname>
+
+
+# Git Fetch vs pull
+# Git fetch brings the remote commits to local stage are not availab for local use
+git fetch origin or git fetch origin <branch_name>
+
+# Git pull brings the remote commits to work area and availab for local use
