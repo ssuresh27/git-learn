@@ -5,3 +5,24 @@ suresh@Sureshs-MacBook-Pro git-learn % git remote -v
 origin	git@github.com:ssuresh27/git-learn.git (fetch)
 origin	git@github.com:ssuresh27/git-learn.git (push)
 suresh@Sureshs-MacBook-Pro git-learn % 
+
+
+suresh@Sureshs-MacBook-Pro git-learn % git push origin main
+Enumerating objects: 189, done.
+Counting objects: 100% (189/189), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (179/179), done.
+Writing objects: 100% (189/189), 23.45 KiB | 4.69 MiB/s, done.
+Total 189 (delta 107), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (107/107), done.
+To github.com:ssuresh27/git-learn.git
+ * [new branch]      main -> main
+suresh@Sureshs-MacBook-Pro git-learn % git branch -v       
+* main 0cf432e git remote comments to add, rename and remove
+suresh@Sureshs-MacBook-Pro git-learn % git status
+On branch main
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro git-learn % git remote -v
+origin	git@github.com:ssuresh27/git-learn.git (fetch)
+origin	git@github.com:ssuresh27/git-learn.git (push)
+suresh@Sureshs-MacBook-Pro git-learn % 
