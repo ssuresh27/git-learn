@@ -23,3 +23,5 @@ git fetch origin or git fetch origin <branch_name>
 # Git pull brings the remote commits to work area and availab for local use
 
 git pull origin main # Brings the data current working branch and merges 
+
+# Demo commit for pull request on github repo
