@@ -1,0 +1,141 @@
+ssuresh@z1xd7steprdn041:~/Git$ git clone git@github.com:ssundararajan02/git-learn.git
+Cloning into 'git-learn'...
+remote: Enumerating objects: 234, done.
+remote: Counting objects: 100% (234/234), done.
+remote: Compressing objects: 100% (100/100), done.
+remote: Total 234 (delta 138), reused 218 (delta 124), pack-reused 0
+Receiving objects: 100% (234/234), 30.65 KiB | 3.06 MiB/s, done.
+Resolving deltas: 100% (138/138), done.
+ssuresh@z1xd7steprdn041:~/Git$ git status
+fatal: not a git repository (or any of the parent directories): .git
+ssuresh@z1xd7steprdn041:~/Git$ cd git-learn
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git remote -v
+origin  git@github.com:ssundararajan02/git-learn.git (fetch)
+origin  git@github.com:ssundararajan02/git-learn.git (push)
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -r 
+  origin/HEAD -> origin/main
+  origin/main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git add .
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git commit -m "Add demo file for git fork and clone"
+[main 1f93fb4] Add demo file for git fork and clone
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:ssundararajan02/git-learn.git
+   5740d7a..1f93fb4  main -> main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git fetch origin main
+From github.com:ssundararajan02/git-learn
+ * branch            main       -> FETCH_HEAD
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git remote -v
+origin  git@github.com:ssundararajan02/git-learn.git (fetch)
+origin  git@github.com:ssundararajan02/git-learn.git (push)
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git remote add upstream git@github.com:ssuresh27/git-learn.git
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git remote -v
+origin  git@github.com:ssundararajan02/git-learn.git (fetch)
+origin  git@github.com:ssundararajan02/git-learn.git (push)
+upstream        git@github.com:ssuresh27/git-learn.git (fetch)
+upstream        git@github.com:ssuresh27/git-learn.git (push)
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git fetch upstream main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 649 bytes | 324.00 KiB/s, done.
+From github.com:ssuresh27/git-learn
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> upstream/main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git pull  upstream main
+From github.com:ssuresh27/git-learn
+ * branch            main       -> FETCH_HEAD
+Updating 1f93fb4..c06466b
+Fast-forward
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -v
+* main c06466b [ahead 1] Merge pull request #2 from ssundararajan02/main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git branch -r
+  origin/HEAD -> origin/main
+  origin/main
+  upstream/main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git log --oneline
+c06466b (HEAD -> main, upstream/main) Merge pull request #2 from ssundararajan02/main
+1f93fb4 (origin/main, origin/HEAD) Add demo file for git fork and clone
+5740d7a rebase the branch with source and rewrite the commit history
+7f8ca56 Merge pull request #1 from ssuresh27/demobranch
+826cd51 demo commit line
+d64f2d7 demo commit on repo
+03b2ffe Add git fetch and pull logs
+033242f Add git push logs from github
+557d62a git fetch bring the remote branch updates to local stage area but not avaiable in workarea
+b7c4eb7 to work on non-default remote branch use git switch or checkout on remote banch name
+978ac62 local commit on remote branch
+4114b06 branch -r to list remote branch info
+4a54def using set-upstream to push setup custom branch
+f67d9fb git remote push with rename branch
+b5fbcab push custom branch to remote
+3c58f28 git push logs to remote
+0cf432e git remote comments to add, rename and remove
+c8b14cb Git remote comments
+2ec54c6 Git remote comments initial file
+4402bbc reset file contents and keep commit message using git reset
+c746c2b undo file changes using git restore instead of git checkout
+610b4ce discard last saved files to last commit point
+d3120fb time travel using git checkout commit_hash and HEAD
+d5ad4ba git stash drop and clear
+a54e45f Git status with apply
+2b5e286 git stash and pop log
+cb2f1f9 git stash log created
+bdf15e6 git stash demo
+9d12e3e git stash intro
+c1946ff git stash intro
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ git push origin main
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 669 bytes | 669.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To github.com:ssundararajan02/git-learn.git
+   1f93fb4..c06466b  main -> main
+ssuresh@z1xd7steprdn041:~/Git/git-learn$ 
