@@ -153,3 +153,7 @@ git reset --hard commit_hash
 # Keeps the commit  hash but undo the file changes or commits
 
 got revert commit_hash
+
+#Rebase, rebase the branch with main and commits and discards merge commits
+
+git rebase <source_branch>

@@ -103,3 +103,41 @@ suresh@Sureshs-MacBook-Pro git-learn % tail -3 Git_comments
 git checkout HEAD <filename(s)>
 
 git checkout %                                                                                                                                      suresh@Sureshs-MacBook-Pro git-learn % 
+
+
+-- rebase
+
+
+suresh@Sureshs-MacBook-Pro git-learn % git merge main
+Merge made by the 'ort' strategy.
+ Git_comments       | 6 +++++-
+ gitremote_comments | 4 +++-
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+suresh@Sureshs-MacBook-Pro git-learn % git status                 
+On branch detach
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro git-learn % git status
+On branch detach
+nothing to commit, working tree clean
+suresh@Sureshs-MacBook-Pro git-learn % 
+suresh@Sureshs-MacBook-Pro git-learn % 
+suresh@Sureshs-MacBook-Pro git-learn % git log --oneline
+--> 94ee416 (HEAD -> detach) Merge branch 'main' into detach
+ca8e347 demo commit
+6e6c3b8 (main, deleteme) rebase the branch with source and rewrite the commit history
+7f8ca56 (origin/main) Merge pull request #1 from ssuresh27/demobranch
+826cd51 (origin/demobranch) demo commit line
+d64f2d7 demo commit on repo
+03b2ffe Add git fetch and pull logs
+033242f Add git push logs from github
+
+
+suresh@Sureshs-MacBook-Pro git-learn % git rebase main
+Successfully rebased and updated refs/heads/detach.
+suresh@Sureshs-MacBook-Pro git-learn % git log --oneline
+--> 84c40da (HEAD -> detach) demo commit
+6e6c3b8 (main, deleteme) rebase the branch with source and rewrite the commit history
+7f8ca56 (origin/main) Merge pull request #1 from ssuresh27/demobranch
+826cd51 (origin/demobranch) demo commit line
+d64f2d7 demo commit on repo
+03b2ffe Add git fetch and pull logs
