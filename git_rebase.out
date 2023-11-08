@@ -19,3 +19,9 @@ f5ae075 create rebase outfile
 9f152f0 Create fork and clone logfile
 c06466b (demo) Merge pull request #2 from ssundararajan02/main
 root@z1xd7steprdn041:/Git/git-learn# 
+
+
+root@z1xd7steprdn041:/Git/git-learn# git log --oneline -n 5
+4e33eff (HEAD -> main) git rebase -i interactive commit testing
+de59a39 (origin/main) Merge pull request #1 from ssundararajan02/forkandclone
+1d8153f git rebase -i interactive logs
