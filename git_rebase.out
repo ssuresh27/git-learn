@@ -6,3 +6,71 @@ c06466b (upstream/main, origin/main, origin/HEAD, main) Merge pull request #2 fr
 5740d7a rebase the branch with source and rewrite the commit history
 7f8ca56 Merge pull request #1 from ssuresh27/demobranch
 
+
+root@z1xd7steprdn041:/Git/git-learn# git remote -v
+origin  git@github.com:ssundararajan02/git-learn.git (fetch)
+origin  git@github.com:ssundararajan02/git-learn.git (push)
+upstream        git@github.com:ssuresh27/git-learn.git (fetch)
+upstream        git@github.com:ssuresh27/git-learn.git (push)
+root@z1xd7steprdn041:/Git/git-learn# git log --oneline -n 5
+de59a39 (HEAD -> main, origin/main) Merge pull request #1 from ssundararajan02/forkandclone
+1d8153f git rebase -i interactive logs
+f5ae075 create rebase outfile
+9f152f0 Create fork and clone logfile
+c06466b (demo) Merge pull request #2 from ssundararajan02/main
+root@z1xd7steprdn041:/Git/git-learn# 
+
+
+root@z1xd7steprdn041:/Git/git-learn# git log --oneline -n 5
+4e33eff (HEAD -> main) git rebase -i interactive commit testing
+de59a39 (origin/main) Merge pull request #1 from ssundararajan02/forkandclone
+1d8153f git rebase -i interactive logs
+
+
+root@z1xd7steprdn041:/Git/git-learn# git log --oneline -n 5
+918f676 (HEAD -> interactive) interactive branch commit
+4e33eff (main) git rebase -i interactive commit testing
+de59a39 (origin/main) Merge pull request #1 from ssundararajan02/forkandclone
+1d8153f git rebase -i interactive logs
+f5ae075 create rebase outfile
+root@z1xd7steprdn041:/Git/git-learn# 
+
+
+root@z1xd7steprdn041:/Git/git-learn# git rebase -i HEAD~1
+[detached HEAD ae3b7c2] This interactive branch commit message updated using git rebase -i
+ Date: Tue Nov 7 16:42:15 2023 -0800
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+Successfully rebased and updated refs/heads/interactive.
+root@z1xd7steprdn041:/Git/git-learn# git log --oneline -n 5
+ae3b7c2 (HEAD -> interactive) This interactive branch commit message updated using git rebase -i
+4e33eff (main) git rebase -i interactive commit testing
+de59a39 (origin/main) Merge pull request #1 from ssundararajan02/forkandclone
+1d8153f git rebase -i interactive logs
+f5ae075 create rebase outfile
+root@z1xd7steprdn041:/Git/git-learn# 
+
+reword 918f676 interactive branch commit
+
+# Rebase 4e33eff..918f676 onto 4e33eff (1 command)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c <commit> to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
