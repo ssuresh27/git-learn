@@ -1,0 +1,5 @@
+# Rebase, rebase the branch with main and commits and discards merge commits
+git rebase <source_branch>
+
+# Interactive mode in-place replace to update the commit message & delete
+git rebase -i HEAD~2
